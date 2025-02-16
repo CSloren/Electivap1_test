@@ -22,7 +22,7 @@ jobs:
         run: npm install -g surge
 
       - name: Desplegar con Surge.sh
-        run: surge ./ --domain tu-dominio.surge.sh  # Cambia "tu-dominio" por uno único
+        run: surge ./ --domain CSlorens1.surge.sh  # Cambia "tu-dominio" por uno único
         env:
           SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}  # Tu correo de Surge.sh
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}  # Tu token de Surge.sh
